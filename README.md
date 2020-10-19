@@ -28,11 +28,11 @@ Add functionality so that you must have at least two different digits represente
 
 ## Examples
 
-- The following credit card numbers are valid:
-  - `9999777788880000`
-  - `6666666666661666`
-- The following credit card numbers are invalid:
-  - `a92332119c011112` *invalid characters*
-  - `4444444444444444` *only one type of number*
-  - `1111111111111110` *sum less than 16*
-  - `6666666666666661` *odd final number*
+```js
+console.log(validateCreditCard("9999777788880000")); // => true
+console.log(validateCreditCard("6666666666661666")); // => true
+console.log(validateCreditCard("a92332119c011112")); // => false
+console.log(validateCreditCard("4444444444444444")); // => false
+console.log(validateCreditCard("1211111111111112")); // => true
+console.log(validateCreditCard("1111111111111110")); // => false
+```
