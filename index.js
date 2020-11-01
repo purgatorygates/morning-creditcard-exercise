@@ -1,6 +1,14 @@
 // We're going to assume creditCardNum is a string.
 function validateCreditCard(creditCardNum) {
-  // Write your code here!
+
+  let sum = 0;
+
+  for (let i = 0; i < creditCardNum.length; i=i+1) {
+    console.log(creditCardNum[i]);
+    sum = sum + Number(creditCardNum[i]);
+    console.log(sum);
+  }
+  return sum > 16; 
 }
 
 /**
